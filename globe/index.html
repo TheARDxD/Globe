@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js with Vite</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  
+  <div id="frame">
+    
+    <div id="output">
+      <h1>Weather <br /> Globe</h1>
+      <p>Enter a location or click anywhere on the globe to get the current weather:</p>
+      <input type="text" id="locationInput" placeholder="Enter location" />
+      <button class="button-30" onclick="getWeather()">Get Weather</button>
+      <div id="weatherInfo"></div>
+      <script src="/weather.js"></script>
+    </div>
+
+    <div id="app"></div>
+
+  </div>
+  
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
