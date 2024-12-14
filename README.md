@@ -1,7 +1,7 @@
 # WeatherGlobe
 An interactive 3D globe powered by Three.js that allows users to click on any point on the Earth and get real-time weather information using the WeatherAPI. Included manual search feature too.
 
-![image](https://github.com/user-attachments/assets/c67884ab-8774-4d36-b8a6-c55e5add1d28)
+![image](https://github.com/user-attachments/assets/ce178bad-a8ac-49c6-b3f6-1b7f0f941977)
 
 ### (This was built using Vite)
 
