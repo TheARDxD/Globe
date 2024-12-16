@@ -18,7 +18,7 @@ const sphereMaterial = new THREE.MeshStandardMaterial({
   map: new THREE.TextureLoader().load('./img/daymap.jpg'),
 });
 const globe = new THREE.Mesh(sphereGeometry, sphereMaterial);
-globe.rotation.y = THREE.MathUtils.degToRad(184); 
+globe.rotation.y = THREE.MathUtils.degToRad(-17); 
 scene.add(globe);
 
 
@@ -65,7 +65,7 @@ document.addEventListener('click', async (event) => {
 
     const radius = globe.geometry.parameters.radius; 
     const lat = Math.asin(point.y / radius) * (180 / Math.PI);
-    const lng = Math.atan2(point.z, point.x) * (180 / Math.PI);
+    const lng = Math.atan2(point.z, point.x) * (-180 / Math.PI);
     document.getElementById("locationInput").value = `Latitude: ${lat.toFixed(2)}, Longitude: ${lng.toFixed(2)}`;
     console.log(`Latitude: ${lat.toFixed(2)}, Longitude: ${lng.toFixed(2)}`);
 

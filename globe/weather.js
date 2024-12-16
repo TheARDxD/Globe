@@ -1,10 +1,9 @@
-const apiKey = '10a50b2041914bf5abe161128241012'; // Replace with your WeatherAPI key
+const apiKey = '10a50b2041914bf5abe161128241012';
 
 async function getWeather() {
   const location = document.getElementById('locationInput').value;
   const weatherInfoDiv = document.getElementById('weatherInfo');
 
-  // Clear previous weather info
   weatherInfoDiv.innerHTML = '';
 
   if (!location) {
@@ -23,7 +22,6 @@ async function getWeather() {
 
     const data = await response.json();
 
-    // Display the weather data
     weatherInfoDiv.innerHTML = `
       <h3>Weather in ${data.location.name}, ${data.location.country}</h3>
       <p>Temperature: ${data.current.temp_c}°C</p>
@@ -39,7 +37,7 @@ async function getWeather() {
 //   const location = lat.toString().concat(",", lng.toString());
 //   const weatherInfoDiv = document.getElementById('weatherInfo');
 
-//   // Clear previous weather info
+//  
 //   weatherInfoDiv.innerHTML = '';
 
 //   const apiUrl = `https://api.weatherapi.com/v1/current.json?key=10a50b2041914bf5abe161128241012&q=${location}&aqi=no`;
@@ -53,7 +51,7 @@ async function getWeather() {
 
 //     const data = await response.json();
 
-//     // Display the weather data
+//    
 //     weatherInfoDiv.innerHTML = `
 //       <h3>Weather in ${data.location.name}, ${data.location.country}</h3>
 //       <p>Temperature: ${data.current.temp_c}°C</p>
